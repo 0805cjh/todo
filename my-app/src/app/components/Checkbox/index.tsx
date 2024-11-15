@@ -17,17 +17,6 @@ const Circle = styled.div<{ checked?: boolean }>`
   }
 `;
 
-const TodoContent = styled.span<{ checked: boolean }>`
-    overflow: hidden;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    cursor: text;
-    text-decoration: ${props => props.checked ? 'line-through' : 'initial'};
-    color: ${props => (props.checked ? '#aaa' : '#212121')};
-`
 export default function CheckBox({
   checked,
   onClick,
